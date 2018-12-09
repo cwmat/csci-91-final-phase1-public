@@ -96,9 +96,26 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
+.navbar{
+    background-color: transparent !important;
+    border-top: 1px solid lightgray !important;
+    padding-left: 0;
+    padding-top: 0;
+}
+.home-link{
+    padding-left: 0 !important;
+}
+#top-logo{
+    margin-bottom: 10px;
+}
+.contact-info{
+    float: right;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+.top-heading{
+    padding-top: 10px;
+}
 
 
 
