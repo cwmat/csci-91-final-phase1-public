@@ -96,11 +96,23 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
 .navbar{
     background-color: transparent !important;
     border-top: 1px solid lightgray !important;
     padding-left: 0;
     padding-top: 0;
+    font-weight: bold;
+}
+.nav-link{
+    color: white !important;
+    text-transform: uppercase;
+}
+.navbar-toggler{
+    margin-top: 10px;
 }
 .home-link{
     padding-left: 0 !important;
@@ -111,10 +123,22 @@ textarea {
 .contact-info{
     float: right;
     padding-left: 20px;
-    padding-top: 15px;
+    padding-top: 15px;   
+    color: #FF8400;
+}
+.contact-info a{
+    color: #FF8400;
+    font-weight: bold;
 }
 .top-heading{
     padding-top: 10px;
+    background: url("../img/top-background-min.png") !important;
+}
+.fa-envelope, .fa-phone{
+    padding: 5px;
+    color: #828282;
+    background-color: white;
+    border-radius: 10em;
 }
 
 
