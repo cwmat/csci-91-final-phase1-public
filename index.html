@@ -64,7 +64,7 @@
         </div>  
     </nav>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div>GET ADT MONITORED</div>
         <div>SECURITY</div>
         <p>
@@ -74,30 +74,33 @@
         <button>WHAT DO I GET?</button>
         <button>LEARN MORE!</button>
       </div>
-  
-      <div class="col-md-6">
+      
+      <div class="col-md-4">
           <div class="card">
               <div class="card-header">
                   <i class="fas fa-home"></i> CONTACT US FOR A FREE QUOTE
               </div>
               <div class="card-body">
-                <div>Starting at</div>
-                <div>$36.99/mo</div>
-                <p>36-month monitoring contract required. Termination fee applies.</p>
-                <form method="POST" action="">
-                  <div class="form-group">
+                <div class ="card-inner-body card-body-top">
+                    <div id="card-body-heading-1">Starting at</div>
+                    <div id="card-body-heading-2">$36.99<span>/mo</span></div>
+                    <p>36-month monitoring contract required. Termination fee applies.</p>
+                </div>
+                
+                <form id="contactForm" method="POST" action="">
+                  <div class="form-group card-inner-body">
                     <input type="text" class="form-control" id="name" placeholder="Name*">
                   </div>
-                  <div class="form-group">
+                  <div class="form-group card-inner-body">
                     <input type="email" class="form-control" id="email" placeholder="Email*">
                   </div>
-                  <div class="form-group">
+                  <div class="form-group card-inner-body">
                     <input type="tel" class="form-control" id="tel" placeholder="Phone*">
                   </div>
-                  <div class="form-group">
+                  <div class="form-group card-inner-body">
                     <input type="text" class="form-control" id="time" placeholder="Best Time to Reach Me*">
                   </div>
-                  <div class="form-group">
+                  <div class="form-group button-group">
                     <button type="submit" class="btn btn-primary form-control">SUBMIT FREE QUOTE!</button>
                   </div>
                 </form>
