@@ -132,7 +132,7 @@ textarea {
 }
 .top-heading{
     padding-top: 10px;
-    background: url("../img/top-background-min.png") fixed !important;
+    background-image: url("../img/top-background-min.png") !important;
     background-size:cover
 }
 .fa-envelope, .fa-phone{
