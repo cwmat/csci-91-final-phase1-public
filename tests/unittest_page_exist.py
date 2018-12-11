@@ -96,7 +96,7 @@ def get_data_from_tag(url):
     parser = MyHTMLParser()
     parser.feed(html)
     content = parser.data
-    print parser.close()
+    parser.close()
     return content
 
 if __name__ == "__main__":
