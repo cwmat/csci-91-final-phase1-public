@@ -4,7 +4,7 @@ import urllib2, sys
 from HTMLParser import HTMLParser
 
 # TODO temp, placeholder for the html to parse with. 
-url = 'https://docs.python.org'
+url = 'http://3.81.16.217/index.html'
 
 #### Unit Tests ####
 
@@ -15,13 +15,15 @@ except ImportError:
 
 class Test(unittest.TestCase):
     def setUp(self): 
-        self.response_code = get_status_code(url)
-        self.response_data = get_data_from_tag(url)
+        self.response_code = 0
+        self.response_data = ''
 
     def test_status_code(self):
+        self.response_code = get_status_code(url)
         self.assertEqual(self.response_code, 200)
 
     def test_content(self):
+        self.response_data = get_data_from_tag(url)
         self.assertEqual(self.response_data, '3.7.1 Documentation')
 
 # define a base class to handle all vary test cases
