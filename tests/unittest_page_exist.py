@@ -24,7 +24,7 @@ class Test(unittest.TestCase):
 
     def test_content(self):
         self.response_data = get_data_from_tag(url)
-        self.assertEqual(self.response_data, '3.7.1 Documentation')
+        self.assertEqual(self.response_data, 'CSCI-91 Public: Phase 1')
 
 # define a base class to handle all vary test cases
 class MyHTMLParser(HTMLParser):
