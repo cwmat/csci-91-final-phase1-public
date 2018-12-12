@@ -235,9 +235,9 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 85%; /* you can use % */
-    height: auto;
+
     max-width: 100%;
+    padding: 0;
 }
 .mid-section-1-left{
     margin-top: 65px;
@@ -249,7 +249,7 @@ textarea {
     font-size: 2.5em;
     font-weight: 500;
 }
-#mid-section-1-h2 span{
+.thin-text{
     font-weight: 100;
 }
 #mid-section-1-h2{
@@ -260,6 +260,45 @@ textarea {
     color: #FF8400;
     font-weight: 500;
     text-decoration: none;
+}
+.mid-section-2{
+    background-image: url("../img/smart-tech.png") !important;
+    background-position: center;
+    background-size: cover;
+    
+    color: white;
+}
+.mid-section-2-heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5em;
+    
+}
+#mid-section-2-h2{
+    color: #FF8400;
+    margin-bottom: 50px;
+}
+#mid-section-2-h1{
+    margin-top: 50px;
+}
+.registered{
+    font-size: 0.5em;
+    vertical-align: super;
+}
+.mid-section-2 #div-button{
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.mid-section-2 button{
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FF8400;
+    border: none;
+    color: white;
 }
 /* ==========================================================================
    Helper classes
