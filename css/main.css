@@ -210,6 +210,8 @@ textarea {
     text-align: left;
     color: white;
     font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .top-section button{
     float: left;
@@ -220,6 +222,9 @@ textarea {
     font-size: 0.9em;
     font-weight: bold;
     cursor: pointer;
+}
+.top-section-buttons{
+    margin-left: 50px;
 }
 #whatdoiget{
     margin-right: 20px;
@@ -238,6 +243,10 @@ textarea {
 
     max-width: 100%;
     padding: 0;
+}
+.mid-section-1 p{
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .mid-section-1-left{
     margin-top: 65px;
@@ -271,8 +280,7 @@ textarea {
 .mid-section-2-heading{
     text-align: center;
     font-weight: 500;
-    font-size: 2.5em;
-    
+    font-size: 2.5em;  
 }
 #mid-section-2-h2{
     color: #FF8400;
@@ -299,6 +307,10 @@ textarea {
     background-color: #FF8400;
     border: none;
     color: white;
+}
+.mid-section-2 p{
+    margin-left: 80px;
+    margin-right: 80px;
 }
 /* ==========================================================================
    Helper classes
