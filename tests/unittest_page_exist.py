@@ -4,7 +4,7 @@ import urllib2, sys
 from HTMLParser import HTMLParser
 
 # TODO temp, placeholder for the html to parse with. 
-url = 'https://docs.python.org'
+url = 'http://3.81.16.217'
 
 #### Unit Tests ####
 
@@ -24,8 +24,8 @@ class Test(unittest.TestCase):
 
     def test_content(self):
         self.response_data = get_data_from_tag(url)
-        # self.assertEqual(self.response_data, 'CSCI-91 Public: Phase 1')
-        self.assertEqual(self.response_data, '3.7.2rc1 Documentation')
+        self.assertEqual(self.response_data, 'CSCI-91 Public: Phase 1')
+        #self.assertEqual(self.response_data, '3.7.2rc1 Documentation')
 
 # define a base class to handle all vary test cases
 class MyHTMLParser(HTMLParser):
