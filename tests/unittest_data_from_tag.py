@@ -75,7 +75,7 @@ class Test(unittest.TestCase):
         self.response_data = get_data_from_tag(url)
 
     def test_pass(self):
-        self.assertEqual(self.response_data, '3.7.1 Documentation')
+        self.assertEqual(self.response_data, '3.7.2rc1 Documentation')
 
 if __name__ == "__main__":
 
