@@ -1,0 +1,17 @@
+{
+  "name": "hookapp",
+  "version": "1.0.0",
+  "description": "Webhook app for Github",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stephen Akaeze",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pug": "^2.0.3",
+    "shelljs": "^0.8.3"
+  }
+}
