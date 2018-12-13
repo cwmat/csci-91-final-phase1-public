@@ -96,23 +96,222 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+.navbar{
+    background-color: transparent !important;
+    border-top: 1px solid lightgray !important;
+    padding-left: 0;
+    padding-top: 0;
+    font-weight: bold;
+}
+.nav-link{
+    color: white !important;
+    text-transform: uppercase;
+}
+.navbar-toggler{
+    margin-top: 10px;
+}
+.home-link{
+    padding-left: 0 !important;
+}
+#top-logo{
+    margin-bottom: 10px;
+}
+.contact-info{
+    float: right;
+    padding-left: 20px;
+    padding-top: 15px;   
+    color: #FF8400;
+}
+.contact-info a{
+    color: #FF8400;
+    font-weight: bold;
+}
+.top-heading{
+    padding-top: 10px;
+    background-image: url("../img/top-background-min.png") !important;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.fa-envelope, .fa-phone{
+    padding: 5px;
+    color: #828282;
+    background-color: white;
+    border-radius: 10em;
+}
+.card{
+    border-radius: 0;
+    border: none;
+    padding-bottom: 0 !important;
+    color: white;
+}
+.card-body{
+    background-color: #636363;
+}
+.card-body, .button-group{
+    padding: 0;
+    margin: 0;
+}
+#contactForm button{
+    margin: 0;
+    border-radius: 0;
+    text-align: left;
+    padding-left: 20px;
+    background-color: #337AB7;
+}
+.card-inner-body{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-body-top{
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.card-body-top p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#card-body-heading-1, #card-body-heading-2{
+    font-size: 30px;
+    font-weight: bold;
+}
+#card-body-heading-2{
+    color: #FF8400;
+}
+#card-body-heading-2 span{
+    font-size: 20px;
+}
+.card-header{
+    background-color: #FF8400;
+    border-radius: 0 !important;
+    border: none;
+    text-align: center;
+}
+.top-section-h1{
+    font-size: 3em;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+.top-section-h2{
+    font-size: 5.5em;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+.top-section{
+    text-align: center;
+    margin-top: 50px;
+}
+.top-section p{
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.top-section button{
+    float: left;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    margin-top: 160px;
+    margin-bottom: 100px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.top-section-buttons{
+    margin-left: 50px;
+}
+#whatdoiget{
+    margin-right: 20px;
+    color: #FF8400;
+    border: none;
+}
+#learn{
+    background: none;
+    border: 1px white solid;
+    color: white;
+}
+.mid-section-1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    max-width: 100%;
+    padding: 0;
+}
+.mid-section-1 p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.mid-section-1-left{
+    margin-top: 65px;
+}
+.mid-section-1-heading{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+.thin-text{
+    font-weight: 100;
+}
+#mid-section-1-h2{
+    color: #136BAD;
+    margin-bottom: 40px;
+}
+.mid-section-1-left a{
+    color: #FF8400;
+    font-weight: 500;
+    text-decoration: none;
+}
+.mid-section-2{
+    background-image: url("../img/smart-tech.png") !important;
+    background-position: center;
+    background-size: cover;
+    
+    color: white;
+}
+.mid-section-2-heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5em;  
+}
+#mid-section-2-h2{
+    color: #FF8400;
+    margin-bottom: 50px;
+}
+#mid-section-2-h1{
+    margin-top: 50px;
+}
+.registered{
+    font-size: 0.5em;
+    vertical-align: super;
+}
+.mid-section-2 #div-button{
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+.mid-section-2 button{
+    border-radius: 30px;
+    padding: 15px 25px 15px 25px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FF8400;
+    border: none;
+    color: white;
+}
+.mid-section-2 p{
+    margin-left: 80px;
+    margin-right: 80px;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
