@@ -3,23 +3,50 @@ var path = require('path');
 var shell = require('shelljs');
 var app = express();
 
-app.set('views', path.join(__dirname,'views'));
-app.set('view engine', 'pug');
+
+app.locals.pending_process = false
+app.locals.queue = false;
+
+
+function run_script(){
+  app.locals.pending_process = true
+
+  shell.exec('/root/ProdContSetup.sh',{async:true},function(code, stdout, stderr){
+    if (app.locals.queue == true){
+      app.locals.queue = false;
+      return run_script()
+    }
+    else{
+      app.locals.pending_process = false;
+      console.log ('All push requests have been executed');
+    }
+});
+}
 
 
 app.get('/payload', (req, res, next)=>{
-  //shell.exec('git clone git@github.com:scakaeze/webhook.git',{async:true})
-  //shell.exec('/Users/Damien/Desktop/hookapp/test.sh')
-  //console.log(app.get('views'))
-  shell.exec('/root/ProdContSetup.sh',{async:true})
-  res.status(200).send('<p>This is the local page</p>')
+
+  if (app.locals.pending_process == true){
+    app.locals.queue = true;
+  }
+  else{
+    run_script();
+  }
+
+  res.status(200).send('<p>The server is running</p>');
 })
 
 app.post('/payload', (req, res, next)=>{
-  shell.exec('/root/ProdContSetup.sh',{async:true})
-  res.status(201).end()
-})
 
+  if (app.locals.pending_process == true){
+    app.locals.queue = true;
+  }
+  else{
+    run_script();
+  }
+
+  res.status(201).end();
+})
 
 
 

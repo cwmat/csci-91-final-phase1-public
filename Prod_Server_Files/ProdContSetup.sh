@@ -22,7 +22,14 @@ systemctl start docker
 mkdir /tmp/build-docker-image && cd /tmp/build-docker-image
 
 #Get the Dockerfile(from S3 bucket) and index.html(from public repo master branch) files
-cp /root/csci-91-final-phase1-public/Prod_Server_Files/index.html /tmp/build-docker-image/
+#cp /root/csci-91-final-phase1-public/Prod_Server_Files/index.html /tmp/build-docker-image/
+cp /root/csci-91-final-phase1-public/index.html /tmp/build-docker-image/
+cp /root/csci-91-final-phase1-public/favicon.ico /tmp/build-docker-image/
+cp /root/csci-91-final-phase1-public/404.html /tmp/build-docker-image/
+cp -r /root/csci-91-final-phase1-public/css/ /tmp/build-docker-image/
+cp -r /root/csci-91-final-phase1-public/img/ /tmp/build-docker-image/
+cp -r /root/csci-91-final-phase1-public/js/ /tmp/build-docker-image/
+
 curl -O https://s3.amazonaws.com/cscie91-assignment-6/Dockerfile
 
 #Build the docker container using the Dockerfile and index.html files
