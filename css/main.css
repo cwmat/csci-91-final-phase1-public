@@ -142,16 +142,16 @@ textarea {
     background-color: white;
     border-radius: 10em;
 }
-.card{
+.top-heading .card{
     border-radius: 0;
     border: none;
     padding-bottom: 0 !important;
     color: white;
 }
-.card-body{
+.top-heading .card-body{
     background-color: #636363;
 }
-.card-body, .button-group{
+.top-heading .card-body, .button-group{
     padding: 0;
     margin: 0;
 }
@@ -162,29 +162,29 @@ textarea {
     padding-left: 20px;
     background-color: #337AB7;
 }
-.card-inner-body{
+.top-heading .card-inner-body{
     padding-left: 20px;
     padding-right: 20px;
 }
-.card-body-top{
+.top-heading .card-body-top{
     margin-top: 25px;
     margin-bottom: 10px;
 }
-.card-body-top p{
+.top-heading .card-body-top p{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#card-body-heading-1, #card-body-heading-2{
+.top-heading #card-body-heading-1, .top-heading #card-body-heading-2{
     font-size: 30px;
     font-weight: bold;
 }
-#card-body-heading-2{
+.top-heading #card-body-heading-2{
     color: #FF8400;
 }
-#card-body-heading-2 span{
+.top-heading #card-body-heading-2 span{
     font-size: 20px;
 }
-.card-header{
+.top-heading .card-header{
     background-color: #FF8400;
     border-radius: 0 !important;
     border: none;
@@ -311,6 +311,28 @@ textarea {
 .mid-section-2 p{
     margin-left: 80px;
     margin-right: 80px;
+}
+#mid-section-3-h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+    padding-top: 30px;
+}
+#mid-section-3-h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 2em;
+    color: #136BAD;
+    margin-bottom: 50px;
+}
+.mid-section-3 .card{
+    background-color: white !important;
+    border: none;
+    text-align: center;
+    height: 200px !important;
+}
+.mid-section-3{
+    background-color: #FAFAFA;
 }
 /* ==========================================================================
    Helper classes
