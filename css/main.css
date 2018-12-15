@@ -240,7 +240,6 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     max-width: 100%;
     padding: 0;
 }
@@ -316,7 +315,6 @@ textarea {
     text-align: center;
     font-weight: 600;
     font-size: 2em;
-    padding-top: 30px;
 }
 #mid-section-3-h2{
     text-align: center;
@@ -329,10 +327,61 @@ textarea {
     background-color: white !important;
     border: none;
     text-align: center;
-    height: 200px !important;
+    height: 650px !important;
 }
 .mid-section-3{
     background-color: #FAFAFA;
+    max-height: 100%;
+    overflow-y: auto; 
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.mid-section-3 .card-footer{
+    background-color: white;
+    border: none;
+}
+.mid-section-3 .card-footer button{
+    background-color: #FF8400;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.mid-section-3 p{
+    border-top: 2px solid #FAFAFA;
+    border-bottom: 2px solid #FAFAFA;
+    font-size: 0.7em;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.mid-section-3 .card .price{
+    font-size: 2em;
+    color: #136BAD;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.mid-section-3 .card .price span{
+    font-size: 0.5em !important;
+}
+.mid-section-3 img{
+    float: left;
+    width: 60px;
+    height: auto;
+}
+.mid-section-3 .card-img-top{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.mid-section-3 .card-body{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+.hidden-img{
+    visibility: hidden;
 }
 /* ==========================================================================
    Helper classes
