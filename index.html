@@ -39,22 +39,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link home-link" href="#">Home</a>
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a id="abt" class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a id="svcs" class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Special Offers</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Book Appointment</a>
+              <a id="pkgs" class="nav-link" href="#packages">Packages</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Contact Us</a>
@@ -62,7 +56,7 @@
           </ul>
         </div>  
     </nav>
-  
+    
     <div class="row">
       <div class="col-md-8 top-section">
         <div class="top-section-h1">GET ADT MONITORED</div>
@@ -111,6 +105,7 @@
       <div class="col-md-1"></div>
     </div>
   </div>
+  <div id="about"></div>
   <div class="container-fluid mid-section-1">  
     <div class="row">
       <div class="col-md-8 mid-section-1-left">
@@ -124,6 +119,7 @@
       </div>
     </div>
   </div>
+  <div id="services"></div>
   <div class="container-fluid mid-section-2">  
     <div class="row">
       <div class="col-md-12">
@@ -134,6 +130,7 @@
       </div>
     </div>
   </div>
+  <div id="packages"></div>
   <div class="container-fluid mid-section-3">  
     <div id="mid-section-3-h1">CHOOSE THE ADT PLAN</div>
     <div id="mid-section-3-h2"><span class="thin-text">FOR YOUR BUDGET AND</span> LIFESTYLE</div>
@@ -236,25 +233,25 @@
           </div>
           <div class="col-md-3">
             <h5>QUICK LINKS</h5>
-            <div><a href="">HOME</a></div>
-            <div><a href="">ABOUT</a></div>
-            <div><a href="">SERVICES</a></div>
-            <div><a href="">SPECIAL OFFERS</a></div>
-            <div><a href="">PACKAGES</a></div>
-            <div><a href="">BOOK APPOINTMENT</a></div>
-            <div><a href="">CONTACT US</a></div>
+            <div class="footer-qlinks"><a href="">HOME</a></div>
+            <div class="footer-qlinks"><a href="">ABOUT</a></div>
+            <div class="footer-qlinks"><a href="">SERVICES</a></div>
+            <div class="footer-qlinks"><a href="">SPECIAL OFFERS</a></div>
+            <div class="footer-qlinks"><a href="">PACKAGES</a></div>
+            <div class="footer-qlinks"><a href="">BOOK APPOINTMENT</a></div>
+            <div class="footer-qlinks"><a href="">CONTACT US</a></div>
           </div>
           <div class="col-md-3">
             <h5>LATEST NEWS</h5>
-            <div>
+            <div class="footer-qlinks blog-links">
               <i class="fas fa-circle"></i>
               <span><a href="">BLOG POST TITLE #1</a></span>
             </div>
-            <div>
+            <div class="footer-qlinks blog-links">
               <i class="fas fa-circle"></i>
               <span><a href="">BLOG POST TITLE #2</a></span>
             </div>
-            <div>
+            <div class="footer-qlinks blog-links">
               <i class="fas fa-circle"></i>
               <span><a href="">BLOG POST TITLE #3</a></span>
             </div>   
@@ -262,11 +259,12 @@
           <div class="col-md-3">
             <h5>NEWSLETTER SIGNUP</h5>
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="Enter Your Email">
+              <input type="text" class="form-control form-control-lg" placeholder="Enter Your Email">
               <span class="input-group-btn">
-                <button class="btn btn-default" type="button">OK</button>
+                <button class="btn btn-default form-control-lg" type="button">OK</button>
               </span>
             </div>
+            <p id="license-no">License #: PA125943</p>
           </div>     
         </div>
       </div>

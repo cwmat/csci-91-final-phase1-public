@@ -99,6 +99,9 @@ textarea {
 *{
     font-family: 'Montserrat', sans-serif;
 }
+img{
+    max-width: 100%;
+}
 .navbar{
     background-color: transparent !important;
     border-top: 1px solid lightgray !important;
@@ -136,7 +139,7 @@ textarea {
     background-size: cover;
     background-attachment: fixed;
 }
-.fa-envelope, .fa-phone{
+.top-heading .fa-envelope, .top-heading .fa-phone{
     padding: 5px;
     color: #828282;
     background-color: white;
@@ -383,6 +386,85 @@ textarea {
 .hidden-img{
     visibility: hidden;
 }
+footer{
+    background-color: #272727;
+    color: #656565;
+    padding: 15px;
+}
+footer .fas{
+    color: #FF8400;
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+footer a, footer a:hover, footer a:visited, footer:active{
+    color: #656565;
+}
+footer .fab{
+    font-size: 1.5em;
+    margin-right: 10px;
+    cursor: pointer;
+}
+footer .fa-map-marker-alt{
+    float: left;
+    display:block;
+    padding-bottom: 10px;
+}
+.footer-section-2 p{
+    font-size: 0.75em;
+    margin-top: 20px;
+    font-weight: 500;
+    padding-right: 50px;
+}
+.footer-section-3{
+    font-size: 0.6em;
+}
+.footer-section-1{
+    border-bottom: 1px solid #656565;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.footer-section-2{
+    margin-top: 20px;
+}
+footer h5{
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+.footer-qlinks{
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footer-section-2 .fa-circle{
+    color: #656565;
+}
+footer a:hover{
+    text-decoration-style: dotted;
+}
+footer #license-no{
+    color: #FF8400;
+    font-weight: 600;
+}
+.blog-links span{
+    font-size: 0.8em;
+}
+.footer-section-2 input{
+    background-color: #3B3B3B;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+.footer-section-2 button{
+    color: #3699C3;
+    font-weight: bold;
+    background-color: #272727;
+    border: 2px solid #3B3B3B;
+    border-radius: 0 10px 10px 0;
+}
+.footer-section-2 input::placeholder{
+    font-size: 0.7em;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
