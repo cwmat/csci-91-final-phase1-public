@@ -465,6 +465,23 @@ footer #license-no{
 .footer-section-2 input::placeholder{
     font-size: 0.7em;
 }
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:visited,
+.navbar-toggler:focus, .navbar-toggler:link{
+  transition: all 0.5s ease-out;
+  border: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.nav-item a:hover, .active:link, .active:hover,
+.active:visited, .active:active{
+    color: #FF8400 !important;
+}
+.active{
+    color: #FF8400 !important;
+}
+.fa-bars{
+    color: white;
+}
 @media only screen and (max-width: 767px){
     .contact-info{
       display: none;
@@ -500,6 +517,13 @@ footer #license-no{
         text-align: center;
         margin-bottom: 20px;
     }
+    .mid-section-1-heading{
+        font-size: 2em;
+    }
+    .mid-section-1 p{
+        margin-left: 10px;
+        margin-right: 10px;
+    } 
 }
 @media (max-width:1556px){
     .top-heading .card{
@@ -539,6 +563,19 @@ footer #license-no{
     .mid-section-2 p{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .navbar-collapse{
+        background-color: rgba(255, 132, 0, 0.8);
+        text-align: center;
+        margin: 0;
+    }
+    nav{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .nav-item a:hover, .active:link, .active:hover,
+    .active:visited, .active:active{
+        color: #636363 !important;
     }
 }
 @media (max-width:1500px) and (min-width:992px){
