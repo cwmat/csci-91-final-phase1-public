@@ -4,7 +4,7 @@ import urllib2, sys
 from HTMLParser import HTMLParser
 
 # TODO temp, placeholder for the html to parse with. 
-url = 'https://docs.python.org'
+url = 'http://3.81.4.63'
 
 #### Unit Tests ####
 
@@ -24,8 +24,7 @@ class Test(unittest.TestCase):
 
     def test_content(self):
         self.response_data = get_data_from_tag(url)
-        # self.assertEqual(self.response_data, 'CSCI-91 Public: Phase 1')
-        self.assertEqual(self.response_data, '3.7.2rc1 Documentation')
+        self.assertEqual(self.response_data, 'GET ADT MONITORED')
 
 # define a base class to handle all vary test cases
 class MyHTMLParser(HTMLParser):
@@ -34,26 +33,22 @@ class MyHTMLParser(HTMLParser):
         HTMLParser.__init__(self)
         self.recording = 0
         self.data = ''
-        self.recordtitle = False
+        self.recorddiv = False
 
     def handle_starttag(self, tag, attrs):
-        if tag == 'title':
-            self.recordtitle = True
-            print "Encountered the beginning of a %s tag" % tag
-            # for name, value in attrs:
-                # print name, value
-                # if name == 'class' and value == 'body':
-                #     print name, value
-                #     print "Encountered the beginning of a %s tag" % tag
+        if tag == 'div':
+            for name, value in attrs:
+                if name == 'class' and value == 'top-section-h1':
+                    self.recorddiv = True
+                    print "Encountered the beginning of a %s tag" % tag
 
     def handle_endtag(self, tag):
-        if tag == 'title':
-          self.recording -=1
-          self.recordtitle = False
-          print "Encountered the end of a %s tag" % tag 
+        if tag == 'div' and self.recorddiv == True:
+            self.recorddiv = False
+            print "Encountered the end of a %s tag" % tag 
 
     def handle_data(self, data):
-        if self.recordtitle:
+        if self.recorddiv:
             print "Data     :", data
             self.data = data
 
