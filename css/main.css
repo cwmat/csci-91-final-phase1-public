@@ -503,12 +503,78 @@ footer #license-no{
 }
 @media (max-width:1556px){
     .top-heading .card{
+        margin-bottom: 0;
         margin-right: 0;
     }
 }
 @media (max-width:991px){
     .top-heading .card{
         margin-bottom: 40px;
+    }
+    .mid-section-3 .card{
+        height: 600px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    footer{
+        text-align: center;
+    }
+    .footer-section-1 .fas{
+        display: none;
+    }
+    .footer-section-1 a, .footer-section-1 a:hover{
+        color: #FF8400;
+    }
+    .footer-section-1 div{
+        margin-bottom: 10px;
+    }
+    footer .newsletter{
+        text-align: left;
+    }
+    .footer-section-3{
+        text-align: left;
+    }
+    .mid-section-2 p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+@media (max-width:1500px) and (min-width:992px){
+    .mid-section-1 p{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .mid-section-1-left{
+        margin-top: 10px;
+    }
+    .mid-section-1-heading{
+        margin-bottom: 5px;
+    }
+    #mid-section-1-h2{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width:1296px) and (min-width:992px){
+    .mid-section-1 p{
+        font-size: 0.8em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .mid-section-1-left{
+        margin-top: 5px;
+    }
+    .mid-section-1-heading{
+        font-size: 1.5em;
+        margin-bottom: 0;
+    }
+
+    #mid-section-1-h2, #mid-section-1-h1{
+        margin: 0;
+    }
+    #mid-section-1-h2{
+        margin-bottom: 10px;
     }
 }
 /* ==========================================================================
