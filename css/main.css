@@ -150,6 +150,7 @@ img{
     border: none;
     padding-bottom: 0 !important;
     color: white;
+    margin-right: 90px;
 }
 .top-heading .card-body{
     background-color: #636363;
@@ -464,7 +465,52 @@ footer #license-no{
 .footer-section-2 input::placeholder{
     font-size: 0.7em;
 }
-
+@media only screen and (max-width: 767px){
+    .contact-info{
+      display: none;
+    }
+    .top-section-h1{
+        font-size: 2em;
+    }
+    .top-section-h2{
+        font-size: 3.5em;
+    }
+    .top-section p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .top-section button{
+        margin-top: 160px;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+    .top-section-buttons{
+        text-align: center;
+        
+    }
+    #whatdoiget{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #learn{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .top-section{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:1556px){
+    .top-heading .card{
+        margin-right: 0;
+    }
+}
+@media (max-width:991px){
+    .top-heading .card{
+        margin-bottom: 40px;
+    }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
