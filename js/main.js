@@ -1,41 +1,29 @@
 $(document).ready(function(){  
-    $("#abt").click(function(e) {
+    $(".abt").click(function(e) {
         
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 2000);
+        }, 1000);
     });
-    $("#svcs").click(function(e) {
+    $(".svcs").click(function(e) {
         
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 2000);
+        }, 1000);
         });
 
-    $("#pkgs").click(function(e) {
+    $(".pkgs").click(function(e) {
         
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 2000);
+        }, 1000);
     });
-    $("#abtfooter").click(function(e) {
+    $(".contact").click(function(e) {
         
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 2000);
-    });
-    $("#svcsfooter").click(function(e) {
-        
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 2000);
-        });
-
-    $("#pkgsfooter").click(function(e) {
-        
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 2000);
+        }, 1000);
+        $(".top-heading .card-header").effect( "pulsate", {times:5}, 3000 );
     });
     $('nav ul li a').each(function() {
         var currentLocation = window.location.pathname;
