@@ -18,6 +18,25 @@ $(document).ready(function(){
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 2000);
     });
+    $("#abtfooter").click(function(e) {
+        
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 2000);
+    });
+    $("#svcsfooter").click(function(e) {
+        
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 2000);
+        });
+
+    $("#pkgsfooter").click(function(e) {
+        
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 2000);
+    });
     $('nav ul li a').each(function() {
         var currentLocation = window.location.pathname;
         var thisLinksLocation = $(this).attr('href');

@@ -482,6 +482,27 @@ footer #license-no{
 .fa-bars{
     color: white;
 }
+.my404{
+    color: white;
+    text-align: center;
+}
+.my404 .errorContainer{
+    background-color: rgba(0,0,0,0.5);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+    margin-top: 200px;
+    padding: 30px;
+    border-radius: 10px;
+}
+.errorContainer a, .errorContainer a:visited,
+.errorContainer a:link, .errorContainer a:active,
+.errorContainer a:focus{
+    color: #FF8400;
+}
+.errorContainer a:hover{
+    text-decoration-style: dotted; 
+}
 @media only screen and (max-width: 767px){
     .contact-info{
       display: none;
