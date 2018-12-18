@@ -4,7 +4,7 @@
 # pull seasadmin/centos the latest version
 # seasadmin/centos is public on docker hub 
 # check  https://hub.docker.com/r/seasadmin/centos/
-FROM    seasadmin/centos:latest
+FROM    centos:latest
 
 
 # 2)

@@ -24,8 +24,8 @@ mkdir /tmp/build-docker-image && cd /tmp/build-docker-image
 cp -r /root/csci-91-final-phase1-public/ /tmp/build-docker-image/
 
 #Get DockerFile from cloned repo
-#cp /root/csci-91-final-phase1-public/Prod_Server_Files/Dockerfile /tmp/build-docker-image/
-cp /root/Dockerfile /tmp/build-docker-image/
+cp /root/csci-91-final-phase1-public/Prod_Server_Files/Dockerfile /tmp/build-docker-image/
+#cp /root/Dockerfile /tmp/build-docker-image/
 
 #Build the docker container using the Dockerfile and index.html files
 cd /tmp/build-docker-image && docker build -t prod_apache_container .
