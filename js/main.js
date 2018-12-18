@@ -25,10 +25,4 @@ $(document).ready(function(){
         }, 800);
         $(".top-heading .card-header").effect( "pulsate", {times:5}, 3000 );
     });
-    $('#contactSubmit').click(function(){
-        $('#alertContact').show()
-    })
-    $('#newsletterSubmit').click(function(){
-        $('#alertNL').show()
-    }) 
 });
