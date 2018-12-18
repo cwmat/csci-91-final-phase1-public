@@ -90,11 +90,13 @@
       </div>
 
       <div class="col-lg-4">
+        
         <div class="card">
           <div class="card-header">
             <i class="fas fa-home"></i> CONTACT US FOR A FREE QUOTE
           </div>
           <div class="card-body">
+            <div id="alertContact" class="alert alert-success alert-dismissable">Thank you!</div>
             <div class="card-inner-body card-body-top">
               <div id="card-body-heading-1">Starting at</div>
               <div id="card-body-heading-2">$36.99<span>/mo</span></div>
@@ -116,7 +118,7 @@
                 <input type="text" class="form-control" id="time" placeholder="Best Time to Reach Me*" required>
               </div>
               <div class="form-group button-group">
-                <button type="submit" class="btn btn-primary form-control">SUBMIT
+                <button type="button" id="contactSubmit" class="btn btn-primary form-control">SUBMIT
                   FREE QUOTE!</button>
               </div>
             </form>
@@ -311,12 +313,16 @@
         </div>
         <div class="col-lg-3 newsletter">
           <h5>NEWSLETTER SIGNUP</h5>
-          <div class="input-group">
-            <input type="text" class="form-control form-control-lg" placeholder="Enter Your Email">
-            <span class="input-group-btn">
-              <button class="btn btn-default form-control-lg" type="button">OK</button>
-            </span>
-          </div>
+            <div id="alertNL" class="alert alert-success alert-dismissable">Thank you!</div>
+            <form method="POST" action="">
+              <div class="input-group">
+                <input type="email" class="form-control form-control-lg" placeholder="Enter Your Email" required>
+                <span class="input-group-btn">
+                  <button id="newsletterSubmit" class="btn btn-default form-control-lg" type="button">OK</button>
+                </span>
+              </div>
+            </form>  
+          
           <p id="license-no">License #: PA125943</p>
         </div>
       </div>
