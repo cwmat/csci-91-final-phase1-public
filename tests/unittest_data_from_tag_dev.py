@@ -59,7 +59,7 @@ class MyHTMLParser(HTMLParser):
 #### function to get html status code
 ###### 
 
-def get_data_from_tag(url):
+def get_data_from_tag():
     try:
 
         ######## Getting URLs
@@ -93,7 +93,7 @@ except ImportError:
 
 class Test(unittest.TestCase):
     def setUp(self): 
-        self.response_data = get_data_from_tag(url)
+        self.response_data = get_data_from_tag()
 
     def test_pass(self):
         self.assertEqual(self.response_data, 'CSCI-91 Public: Phase 1')

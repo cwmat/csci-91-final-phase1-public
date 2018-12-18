@@ -40,11 +40,11 @@ class Test(unittest.TestCase):
         self.response_data = ''
 
     def test_status_code(self):
-        self.response_code = get_status_code(url)
+        self.response_code = get_status_code()
         self.assertEqual(self.response_code, 200)
 
     def test_content(self):
-        self.response_data = get_data_from_tag(url)
+        self.response_data = get_data_from_tag()
         self.assertEqual(self.response_data, 'GET ADT MONITORED')
 
 # define a base class to handle all vary test cases
@@ -76,7 +76,7 @@ class MyHTMLParser(HTMLParser):
 #### function to get html status code
 ######
 
-def get_status_code(url):
+def get_status_code():
     try:
 
         ######## Getting URLs
@@ -96,7 +96,7 @@ def get_status_code(url):
 #### function to get html data
 ###### 
 
-def get_data_from_tag(url):
+def get_data_from_tag():
     try:
 
         ######## Getting URLs

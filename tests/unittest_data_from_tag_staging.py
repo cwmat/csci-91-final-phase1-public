@@ -39,11 +39,6 @@ class MyHTMLParser(HTMLParser):
         if tag == 'title':
             self.recordtitle = True
             print "Encountered the beginning of a %s tag" % tag
-            # for name, value in attrs:
-                # print name, value
-                # if name == 'class' and value == 'body':
-                #     print name, value
-                #     print "Encountered the beginning of a %s tag" % tag
 
     def handle_endtag(self, tag):
         if tag == 'title':
@@ -59,7 +54,7 @@ class MyHTMLParser(HTMLParser):
 #### function to get html status code
 ###### 
 
-def get_data_from_tag(url):
+def get_data_from_tag():
     try:
 
         ######## Getting URLs
@@ -93,7 +88,7 @@ except ImportError:
 
 class Test(unittest.TestCase):
     def setUp(self): 
-        self.response_data = get_data_from_tag(url)
+        self.response_data = get_data_from_tag()
 
     def test_pass(self):
         self.assertEqual(self.response_data, 'CSCI-91 Public: Phase 1')
