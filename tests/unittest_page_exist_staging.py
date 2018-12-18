@@ -3,8 +3,29 @@
 import urllib2, sys
 from HTMLParser import HTMLParser
 
-# TODO temp, placeholder for the html to parse with. 
-url = 'http://3.81.4.63'
+#### Dynamically generate dev url. 
+
+def generate_request_url():
+    url = ''
+    pat = re.compile("(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})")
+
+    try:
+
+        ######## Getting URLs
+        response = urllib2.urlopen('https://s3.amazonaws.com/e91-cloudtrail/AWSLogs/531997612114/CloudTrail/test/stagingip')
+        ## Getting the code
+        content = response.read()
+        print "This gets the DEV ip: ", content
+        matches = pat.match(content)
+        if matches:
+            devip = matches.group(0)
+            url = "http://%s" % devip
+     
+    except urllib2.HTTPError as e:
+        print(e, 'while fetching', url)
+        return 
+    return url
+
 
 #### Unit Tests ####
 
@@ -59,6 +80,7 @@ def get_status_code(url):
     try:
 
         ######## Getting URLs
+        url = generate_request_url()
         response = urllib2.urlopen(url)
         # debug - full html pull-down here
         ## Get the URL. This gets the real URL. 
@@ -78,6 +100,7 @@ def get_data_from_tag(url):
     try:
 
         ######## Getting URLs
+        url = generate_request_url()
         response = urllib2.urlopen(url)
         # debug - full html pull-down here
         ## Get the URL. This gets the real URL. 
