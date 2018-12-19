@@ -1,5 +1,5 @@
-# csci-91-final-phase1-public
-Repo holding public facing source code for CSCI-91 final project.
+# CSCIE-91 Group Project, Fall 2018
+Repo holding public facing source code for CSCIE-91 final project.
 
 ## Build
 
