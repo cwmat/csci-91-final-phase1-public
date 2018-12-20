@@ -21,12 +21,12 @@ We invite you to contribute! If you wish to contribute to this open source proje
 2. Create a feature branch and make edits .
 3. Commit edits to your feature branch and create pull request to dev branch
 4. Include these reviewers 
-  1. Usernamelias
-  2. cwmat
-  3. diasyzheng2012
-  4. cml2197
-  5. philc171
-  6. scakaeze
+    1. Usernamelias
+    2. cwmat
+    3. diasyzheng2012
+    4. cml2197
+   5. philc171
+    6. scakaeze
 5. Once request is approved and merged by reviewer, it will trigger dev branch and it will go through the jenkins CI/CD process 
 6. If success, you will be able to see the changes you made in the github repos and on the prod site 
 
